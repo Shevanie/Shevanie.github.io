@@ -1,67 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./DevFolio/assets/img/favicon.png" rel="icon">
-    <link href="./DevFolio/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body,html{
+      height: 100%;
+      margin: 0;
+      background-color: #000;
+    }
+   
+.carousel-inner{
+  height: 200%;
+  width: 500px;
+}
+.container{
+  width: 530px;
+}
+.bg-image {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+
+.overlay-mf {
+  background-color: #000000;
   
-    <!-- Vendor CSS Files -->
-    <link href="./DevFolio/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./DevFolio/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="./DevFolio/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="./DevFolio/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-    <!-- Template Main CSS File -->
-    <link href="./DevFolio/assets/css/style.css" rel="stylesheet">
+}
+
+  </style>
 </head>
+
 <body>
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(./DevFolio/assets/img/overlay-bg.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-  
-              <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-box">
-                      <div class="author-test">
-                        <img src="./DevFolio/assets/img/Leonardo da Vinci.jpg" style="height: 150px;width: 150px;" alt="" class="rounded-circle b-shadow-a">
-                        <span class="author">Leonardo da Vinci</span>
-                      </div>
-                      <div class="content-test">
-                        <p class="description lead">
-                         "Simplicity is the ultimate sophistication"
-                        </p>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-  
-                  <div class="swiper-slide">
-                    <div class="testimonial-box">
-                      <div class="author-test">
-                        <img src="./DevFolio/assets/img/stevejobsbig-804x1024.jpg" style="height: 150px;width: 120px;" alt="" class="rounded-circle b-shadow-a">
-                        <span class="author">Steve Jobs</span>
-                      </div>
-                      <div class="content-test">
-                        <p class="description lead">
-                          "Design is not just what it looks like and feels like. Design is how it works."
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-  
-              <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-            
-          </div> -->
-            </div>
-          </div>
+ <p><a href="./index.html"> <span class="glyphicon glyphicon-chevron-left" style="padding-top: 10px;padding-left: 10px; "></span></p>    </a>
+  <div class="container bg">
+    <h2 style="padding-left: 150px; padding-bottom: 30px;padding-top: 30px; color: white;">College Posters</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img
+            src="./DevFolio/assets/img/Pink Gradient Simple Modern Internship Graphic Designer Poster (Instagram Post).png"
+            alt="Los Angeles" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="./DevFolio/assets/img/Poster final.png" alt="Chicago" style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./DevFolio/assets/img/WhatsApp Image 2024-05-26 at 20.05.37_df3ae5b7.jpg" alt="Chicago"
+            style="width:100%;">
+        </div>
+        <div class="item">
+          <img src="./DevFolio/assets/img/Guest Lecture.jpg" alt="Chicago"
+            style="width:100%;">
+        </div>
+
+
+        <div class="item">
+          <img src="/DevFolio/assets/img/poster.png" alt="New york" style="width:100%;">
         </div>
       </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
 </body>
+
 </html>
